@@ -1,0 +1,373 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  text-decoration: none;
+  overflow: none;
+  margin-right: 20px;
+  background-color: #f5f5f5;
+  z-index: -1;
+}
+
+.Nav {
+  position: sticky;
+  background-color: #fdfeff;
+  margin: 10px;
+  align-content: space-between;
+  text-align: left;
+  padding-top: 10px;
+  border-radius: 0 70px;
+
+
+}
+
+.goods{
+  background-color: #f5f5f5;
+  width: 55%;
+  column-width: 60%;
+  text-align: left;
+  padding: 10px;
+  padding-top: 40px;
+  margin: 5px;
+}
+
+.bid{
+  position: sticky;
+  background-color: #fdfeff;
+  margin: 2px;
+  text-align: left;
+  width: 20%;
+  padding: 15px;
+  border-radius: 70px 0;
+
+
+}
+
+.Auction{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.Auction-Info{
+  background-color: #fdfeff;
+  margin-right: 30px;
+  width: 200px;
+  text-align: center;
+  align-content: space-between;
+  border-radius: 50px;
+
+}
+
+.Auction{
+  display: block;
+}
+
+.Product{
+  position: sticky;
+  display: block;
+  margin-top: 3px;
+  padding: 5px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.Product div{
+ display: inline-block;
+ grid-template-columns: repeat(2, 2fr);
+ grid-gap: 15px;
+ margin: 15px;
+
+}
+
+.Product h2{
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.Media{
+  margin-left: 850px;
+  padding: 20px;
+}
+.Media-Links{
+  padding-right: 30px;
+
+}
+
+.butt{
+  margin-left: 180px;
+  margin-top: 30px;
+  background-color: #4169E1;
+  padding: 5px;
+  border-radius: 8px;
+  color: #fdfeff;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Activities{
+  margin-top: 250px;
+}
+
+.Users{
+  margin-top: 110px;
+  display: flex;
+  padding: 20px;
+}
+
+.Users .icon{
+  margin-top: 15px;
+  padding-right: 25px;
+}
+
+.Nav-Bar {
+  padding: 25px;
+
+}
+
+.Nav-Bar h4{
+  padding: 10px;
+  word-spacing: 5px;
+}
+
+.Nav-Bar h4 a{
+  text-decoration: none;
+  color: black;
+}
+
+.Nav-Bar h4 a:hover, .Product h3:hover, .Product img:hover,.star:hover,.Media-Links:hover{
+  color: #4169E1;
+}
+
+.butt:hover{
+  background-color: #6276b3;
+}
+
+.image img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.Item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Review{
+  margin: 150px;
+  margin-top: 40px;
+  align-items: center center;
+}
+
+.Desc{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+}
+
+.Description{
+  margin-top: 90px;
+}
+
+.Description div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Description p{
+  margin-top: 20px;
+  color: #4169E1;
+}
+
+.Auction-Info{
+  position: sticky;
+  height: 300px;
+  width: 200px;
+  align-content: center;
+}
+
+.Auction-Info button{
+  background-color: #4169E1;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
+  color: white;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.Auction-Info button:hover{
+  background-color: #6276b3;
+}
+.Auction-Info div{
+  padding: auto;
+  margin-top: 50px;
+}
+.Auction-Info div p{
+  margin-top: 40px;
+  margin-bottom: -10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.Auction-Info div h3{
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+.page, .logInPage{
+  position: absolute;
+  text-align: left;
+  background-color: #fdfeff;
+  margin: 150px;
+  padding: 30px;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.SignPage{
+  margin-top: 80px;
+  margin-left: -300px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+}
+
+.overlay{
+  margin-top: -250px;
+  margin-left: -100px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+}
+
+.layContainer, .form{
+  max-width: 300px;
+  text-align: left;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  background-color: #fdfeff;
+  margin: 150px;
+  padding: 30px;
+  justify-content: center;
+  align-content: center;
+}
+
+input[type=text], input[type=password],input[type=url], input[type=number],input[type=file], .cat select {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=file]:focus, input[type=url]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.cat label{
+  font-weight: bold;
+}
+
+.cat{
+  margin-bottom: -12px;
+}
+
+.registerbtn {
+  background-color: #4169E1;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+.formPages{
+  display: none;
+}
+
+.Table table{
+  width: 100%;
+
+}
+.arrange{
+  display: inline-flex;
+  align-items: stretch;
+}
+
+.arrange h3{
+  font-size: 18px;
+  margin-right: -5px;
+}
+
+.DescMe{
+  margin-left: -120px;
+  max-width: 300px;
+  max-height:500px;
+  border: 1px solid black;
+  white-space: wrap;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+
+.closeTab{
+  float: right;
+  margin-top: -25px;
+}
+
+.closeTab:hover{
+  color: #4169E1;
+}
+
+.userInfo{
+  display: flex;
+  text-align: left;
+  justify-content: left;
+
+}
+
+.userInfo div h5{
+  padding-left: 30px;
+  margin-top: 28px;
+  color: red
+}
+
+.deleteBid{
+  padding-left: 50px;
+  margin-top: 28px;
+}
+
